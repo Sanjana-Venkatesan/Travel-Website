@@ -1,0 +1,143 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Alice Johnson",
+  "email": "alice@example.com",
+  "password": "password123"
+}
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Bob Williams",
+  "email": "bob@example.com",
+  "password": "456"
+}
+
+###
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email":"kitty@gmial.com",
+    "password":"123456"
+}
+
+###
+POST http://localhost:3000/api/hotel
+Content-Type: application/json
+
+{
+  "name": "Ocean Breeze Resort",
+  "location": "Maldives",
+  "price": "$250/night",
+  "rating": 4.9,
+  "image": "https://example.com/images/ocean-breeze.jpg",
+  "amenities": ["Free WiFi", "Infinity Pool", "Private Beach", "Spa"],
+  "reviews": [
+    {
+      "user": "John Doe",
+      "comment": "Amazing stay! The view was breathtaking.",
+      "rating": 5
+    },
+    {
+      "user": "Jane Smith",
+      "comment": "Great service and beautiful resort!",
+      "rating": 4.8
+    }
+  ],
+  "contactInfo": {
+    "phone": "+1 234-567-890",
+    "email": "contact@oceanbreezeresort.com",
+    "website": "https://oceanbreezeresort.com"
+  },
+  "isAvailable": true
+}
+
+###
+POST http://localhost:3000/api/hotel
+Content-Type: application/json
+
+{
+  "name": "Sunset Paradise Hotel",
+  "location": "Miami, USA",
+  "price": "$200/night",
+  "rating": 4.8,
+  "image": "https://example.com/images/sunset-paradise.jpg",
+  "amenities": ["Free WiFi", "Swimming Pool", "Gym", "Bar"],
+  "reviews": [
+    {
+      "user": "67c2d442f1d9ea2513bc3c96",
+      "comment": "Beautiful hotel, but food could be better.",
+      "rating": 4
+    }
+  ],
+  "contactInfo": {
+    "phone": "+1 305-123-4567",
+    "email": "contact@sunsetparadise.com",
+    "website": "https://sunsetparadise.com"
+  },
+  "isAvailable": true,
+  "createdBy": "67d5906364b3f3f0b82300ae"
+}
+
+###
+GET http://localhost:3000/api/hotel HTTP/1.1
+
+###
+POST http://localhost:3000/api/sites HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Central Park",
+    "location": "New York, USA",
+    "image": "https://example.com/central-park.jpg",
+    "description": "A large public park in the heart of New York City.",
+    "coordinates": {
+        "latitude": 40.785091,
+        "longitude": -73.968285
+    },
+    "category": "park",
+    "rating": 4.8,
+    "isActive": true
+}
+
+###
+POST http://localhost:3000/api/sites HTTP/1.1
+Content-Type: application/json
+
+    {
+        "name": "Statue of Liberty",
+        "location": "New York, USA",
+        "image": "https://example.com/statue-of-liberty.jpg",
+        "description": "A symbol of freedom and democracy.",
+        "coordinates": {
+            "latitude": 40.6892,
+            "longitude": -74.0445
+        },
+        "category": "monument",
+        "rating": 4.8,
+        "isActive": true
+    }
+
+###
+POST http://localhost:3000/api/faq HTTP/1.1
+Content-Type: application/json
+
+{
+  "question":"How many sites are available in France ?"
+}
+
+###
+POST http://localhost:3000/api/recommendation HTTP/1.1
+Content-Type: application/json
+
+{
+  "text":"I'm feeling drowsy!",
+  "location":"Paris"
+}
+
+###
