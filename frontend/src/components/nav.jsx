@@ -20,8 +20,8 @@ const Navbar = () => {
         boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
       }}
     >
-      <div style={{ fontWeight: 700, fontSize: "1.5rem", color: "#2563eb" }}>
-        TravelEase
+      <div style={{ fontWeight: 700, fontSize: "1.5rem", color: "rgba(61, 57, 57, 0.9)" }}>
+        Next Trip.AI
       </div>
 
       <div style={{ display: "flex", gap: "2rem" }}>

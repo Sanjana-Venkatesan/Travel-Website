@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import loginService from "../services/login";
 import { useNavigate } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });

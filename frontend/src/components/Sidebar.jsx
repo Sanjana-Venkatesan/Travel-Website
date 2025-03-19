@@ -26,7 +26,7 @@ const Sidebar = ({ activeSection, setActiveSection }) => {
       <div className="sidebar-header">
         <div className="logo-container">
           <span className="logo-icon">✈️</span>
-          <h1 className="logo-text">Travel Explorer</h1>
+          <h1 className="logo-text">Next Trip.AI</h1>
         </div>
       </div>
       
